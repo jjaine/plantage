@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="869562106" Name="Play_Flower_merge" ObjectPath="\Events\Default Work Unit\Play_Flower_merge"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="80703079" Language="SFX">
+					<ShortName>SFX_Flower_Merge_01.wav</ShortName>
+					<Path>SFX\SFX_Flower_Merge_01_90BE6698.wem</Path>
+				</File>
+				<File Id="444226966" Language="SFX">
+					<ShortName>SFX_Flower_Merge_02.wav</ShortName>
+					<Path>SFX\SFX_Flower_Merge_02_C49446E2.wem</Path>
+				</File>
+				<File Id="726620375" Language="SFX">
+					<ShortName>SFX_Flower_Merge_03.wav</ShortName>
+					<Path>SFX\SFX_Flower_Merge_03_0796AB8F.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
