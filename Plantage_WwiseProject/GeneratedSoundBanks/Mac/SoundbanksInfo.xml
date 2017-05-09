@@ -19,11 +19,16 @@
 				<Event Id="869562106" Name="Play_Flower_Merge" ObjectPath="\Events\Default Work Unit\Play_Flower_Merge"/>
 				<Event Id="2757013549" Name="Play_Merge_Fail" ObjectPath="\Events\Default Work Unit\Play_Merge_Fail"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="1012143543" Name="Play_Spawn" ObjectPath="\Events\Default Work Unit\Play_Spawn"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="45682085" Language="SFX">
 					<ShortName>SFX_Merge_Fail_03.wav</ShortName>
 					<Path>SFX\SFX_Merge_Fail_03_EE4C2B98.wem</Path>
+				</File>
+				<File Id="77345040" Language="SFX">
+					<ShortName>SFX_Spawn_02.wav</ShortName>
+					<Path>SFX\SFX_Spawn_02_E95633E1.wem</Path>
 				</File>
 				<File Id="80703079" Language="SFX">
 					<ShortName>SFX_Flower_Merge_01.wav</ShortName>
@@ -48,6 +53,14 @@
 				<File Id="726620375" Language="SFX">
 					<ShortName>SFX_Flower_Merge_03.wav</ShortName>
 					<Path>SFX\SFX_Flower_Merge_03_0796AB8F.wem</Path>
+				</File>
+				<File Id="875391029" Language="SFX">
+					<ShortName>SFX_Spawn_03.wav</ShortName>
+					<Path>SFX\SFX_Spawn_03_E95633E1.wem</Path>
+				</File>
+				<File Id="1027639518" Language="SFX">
+					<ShortName>SFX_Spawn_01.wav</ShortName>
+					<Path>SFX\SFX_Spawn_01_E95633E1.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
