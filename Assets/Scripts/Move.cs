@@ -15,8 +15,12 @@ public class Move : MonoBehaviour {
 	void Update () {
 		x = Input.mousePosition.x;
     	y = Input.mousePosition.y;
+    	if(PlayTurn.play)
+    		transform.position = new Vector3(transform.position.x+0.0001f, transform.position.y, transform.position.z);
 	}
 	void OnMouseDrag(){
-    	transform.position = Camera.main.ScreenToWorldPoint(new Vector3(x,y,9.0f));
+		if(!PlayTurn.play){
+			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(x,y,9.0f));
+		}
 	}
 }
