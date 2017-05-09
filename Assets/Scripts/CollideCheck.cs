@@ -12,7 +12,9 @@ public class CollideCheck : MonoBehaviour {
 		if(collides && !otherFlower){
 			collides = false;
 		}
-		if(inMerge)
+		if(inMerge && !otherFlower)
+			collides = false;
+		if(inMerge && otherFlower)
 			collides = true;
 	}
 
@@ -20,6 +22,12 @@ public class CollideCheck : MonoBehaviour {
 		if(other.tag == "Flower"){
 			collides=true;
 			otherFlower = other.gameObject;
+		}
+	}
+	void OnTriggerExit2D(Collider2D other){
+		if(other.tag == "Flower"){
+			collides=false;
+			otherFlower = null;
 		}
 	}
 

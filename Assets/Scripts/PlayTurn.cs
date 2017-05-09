@@ -9,12 +9,13 @@ public class PlayTurn : MonoBehaviour {
 	bool mergeDone = false;
 	bool inMerge = false;
 	public GameObject[] prefabs;
+	public List<GameObject> flowersInGame;
+	public GameObject explosion;
 
 	[Header("Button stuff")]
 	public Button button;
 	public Sprite pauseButton;
-	public Sprite playButton;
-	public List<GameObject> flowersInGame;
+	public Sprite playButton; 
 
  	// Use this for initialization
 	void Start () {
@@ -32,6 +33,15 @@ public class PlayTurn : MonoBehaviour {
 
 			//all done, next turn
 			if(mergeDone){
+				foreach (GameObject flower in flowersInGame){
+					if(flower!=null){
+						flower.GetComponent<PlantInfo>().turnsLeft--;
+						Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+						prev.a = ((float)flower.GetComponent<PlantInfo>().turnsLeft+1)/3;
+						flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
+						flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+					}
+				}
 				//instantiate new things
 				AddNewFlowers();
 				play = false;
@@ -39,6 +49,15 @@ public class PlayTurn : MonoBehaviour {
 				mergeDone = false;
 			}
 			else if(!c){
+				foreach (GameObject flower in flowersInGame){
+					if(flower!=null){
+						flower.GetComponent<PlantInfo>().turnsLeft--;
+						Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+						prev.a = ((float)flower.GetComponent<PlantInfo>().turnsLeft+1)/3;
+						flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
+						flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+					}
+				}
 				//instantiate new things
 				AddNewFlowers();
 				play = false;
@@ -56,14 +75,19 @@ public class PlayTurn : MonoBehaviour {
 	bool CheckCollisions(){
 		foreach (GameObject flower in flowersInGame){
 			if(flower!=null){
-				if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
-					//merge!
-					GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
-					if(otherFlower){
-						GameObject newFlower = Combination(flower);
-						StartCoroutine(Merge(flower, newFlower, otherFlower));
+				if(flower.GetComponent<PlantInfo>().turnsLeft == 0){
+					Destroy(flower);
+				}
+				else{
+					if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
+						//merge!
+						GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
+						if(otherFlower){
+							GameObject newFlower = Combination(flower);
+							StartCoroutine(Merge(flower, newFlower, otherFlower));
+						}
+						return true;
 					}
-					return true;
 				}
 			}
 		}
@@ -83,6 +107,7 @@ public class PlayTurn : MonoBehaviour {
         flowersInGame.Remove(otherFlower);
         Destroy(otherFlower);
         flowersInGame.Add(newFlower);
+        
         yield return new WaitForSeconds(1);
         mergeDone = true;
         inMerge = false;
@@ -103,9 +128,16 @@ public class PlayTurn : MonoBehaviour {
 				break;
 			}
 		}
-		GameObject f = Instantiate(prefabs[i], (other.transform.position+flower.transform.position)/2, Quaternion.identity);
-		f.transform.parent = flower.transform.parent;
-		return f;
+		if(i==prefabs.Length){
+			Debug.Log("Invalid merge!");
+			return null;
+		}
+		else{
+			GameObject f = Instantiate(prefabs[i], (other.transform.position+flower.transform.position)/2, Quaternion.identity);
+			f.transform.parent = flower.transform.parent;
+			return f;
+		}
+		
 	}
 
 	void AddNewFlowers(){

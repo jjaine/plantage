@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlantInfo : MonoBehaviour {
 
-	public string Color;
-	public int FlowerCorners;
-	public int LeafCorners;
-	public int turnsLeft = 3;
+public class LevelLoader : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,5 +14,10 @@ public class PlantInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	public void ReloadLevel()
+	{
+		int level = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(level);
 	}
 }
