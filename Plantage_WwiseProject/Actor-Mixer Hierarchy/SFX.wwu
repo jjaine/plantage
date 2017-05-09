@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}" SchemaVersion="75" RootDocumentID="{D0360F7F-DDA3-48B8-852A-EF4FAD7DF0C4}">
 	<AudioObjects>
-		<WorkUnit Name="SFX" ID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}" OwnerID="{D0360F7F-DDA3-48B8-852A-EF4FAD7DF0C4}" PersistMode="Nested"/>
+		<WorkUnit Name="SFX" ID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}" OwnerID="{D0360F7F-DDA3-48B8-852A-EF4FAD7DF0C4}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Flower_merge" ID="{B4EC280A-5F3C-4857-94E1-B9A7B468B438}" ShortID="826576633">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Flower_Merge_01" ID="{7FCAC309-8BC2-4328-84E7-50707C1F168A}" ShortID="129882257" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Merge_01" ID="{4948320A-5655-479A-A216-42596B07F68D}" ShortID="80703079">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.45596935897879E-02"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Merge_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Merge_01" ID="{4948320A-5655-479A-A216-42596B07F68D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Flower_Merge_02" ID="{1A923AA9-A86B-4E5A-9A4D-E03701EE88D3}" ShortID="784177883" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Merge_02" ID="{C1C52F95-E0C2-4EAC-BAA8-0560A86CB18D}" ShortID="444226966">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.15518491660624E-02"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Merge_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Merge_02" ID="{C1C52F95-E0C2-4EAC-BAA8-0560A86CB18D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Flower_Merge_03" ID="{D9374CC1-1A4F-4831-B043-9469B16D97F3}" ShortID="295777161" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Merge_03" ID="{F92A6EAD-9342-4D22-B4BB-1F1AB59472CE}" ShortID="726620375">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="5.25713364872176E-02"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Merge_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Merge_03" ID="{F92A6EAD-9342-4D22-B4BB-1F1AB59472CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

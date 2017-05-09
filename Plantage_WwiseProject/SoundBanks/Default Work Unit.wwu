@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5E97885D-2B2E-4C82-BCD3-324A8FB84418}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{5E97885D-2B2E-4C82-BCD3-324A8FB84418}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5E97885D-2B2E-4C82-BCD3-324A8FB84418}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SFX" ID="{BF1EA5AE-A713-4AEF-BD8E-1C8FAF88EE21}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Music" ID="{A9DA3041-9548-46A1-82FC-15A192F0AD8B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Flower_merge" ID="{37D04437-9F1B-4990-9272-BBCEEDC250F1}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

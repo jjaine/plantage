@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	869562106	Play_Flower_merge			\Default Work Unit\Play_Flower_merge	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	80703079	SFX_Flower_Merge_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_01_90BE6698.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_01		9111
+	444226966	SFX_Flower_Merge_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_02_C49446E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_02		8925
+	726620375	SFX_Flower_Merge_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_03_0796AB8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_03		8436
+
