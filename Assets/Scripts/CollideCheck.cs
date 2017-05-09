@@ -8,12 +8,18 @@ public class CollideCheck : MonoBehaviour {
 	public GameObject otherFlower;
 	public bool inMerge = false;
 
-	void OnTriggerStay2D(Collider2D other){
-		if(PlayTurn.play){
-			if(other.tag == "Flower"){
-				collides=true;
-				otherFlower = other.gameObject;
-			}
+	void Update(){
+		if(collides && !otherFlower){
+			collides = false;
+		}
+		if(inMerge)
+			collides = true;
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.tag == "Flower"){
+			collides=true;
+			otherFlower = other.gameObject;
 		}
 	}
 

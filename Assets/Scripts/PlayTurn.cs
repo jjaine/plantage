@@ -7,52 +7,40 @@ public class PlayTurn : MonoBehaviour {
 
 	public static bool play = false;
 	bool mergeDone = false;
-	public Plant[] prefabs;
+	bool inMerge = false;
+	public GameObject[] prefabs;
 
 	[Header("Button stuff")]
 	public Button button;
 	public Sprite pauseButton;
 	public Sprite playButton;
 	public List<GameObject> flowersInGame;
- 
- 	[System.Serializable]
-    public class Plant
-    {
-        public GameObject Flower;
-        public GameObject Leaf;
-    }
 
  	// Use this for initialization
 	void Start () {
 		flowersInGame = new List<GameObject>();
-		foreach (Transform child in transform){
-            flowersInGame.Add(child.gameObject);
-        }
+
+		AddNewFlowers();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(play){
-			//instantiate new things
 
 			//check collisions
-			foreach (GameObject flower in flowersInGame){
-				if(flower!=null){
-					if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
-						//merge!
-						foundCollision = true;
-						GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
-						if(otherFlower){
-							GameObject newFlower = Combination(flower);
-							StartCoroutine(Merge(flower, newFlower, otherFlower));
-						}
-						break;
-					}
-				}
-			}
+			bool c = CheckCollisions();
 
 			//all done, next turn
 			if(mergeDone){
+				//instantiate new things
+				AddNewFlowers();
+				play = false;
+				button.image.sprite = playButton;
+				mergeDone = false;
+			}
+			else if(!c){
+				//instantiate new things
+				AddNewFlowers();
 				play = false;
 				button.image.sprite = playButton;
 				mergeDone = false;
@@ -65,11 +53,28 @@ public class PlayTurn : MonoBehaviour {
 		play = true;
 	}
 
-	IEnumerator Wait(){
-		yield return new WaitForSeconds(1);
+	bool CheckCollisions(){
+		foreach (GameObject flower in flowersInGame){
+			if(flower!=null){
+				if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
+					//merge!
+					GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
+					if(otherFlower){
+						GameObject newFlower = Combination(flower);
+						StartCoroutine(Merge(flower, newFlower, otherFlower));
+					}
+					return true;
+				}
+			}
+		}
+		if(!inMerge)
+			return false;
+		else
+			return true;
 	}
 
 	IEnumerator Merge(GameObject flower, GameObject newFlower, GameObject otherFlower){
+		inMerge = true;
 		flower.GetComponent<CollideCheck>().inMerge = true;
 		otherFlower.GetComponent<CollideCheck>().inMerge = true;
         yield return new WaitForSeconds(1);
@@ -78,16 +83,37 @@ public class PlayTurn : MonoBehaviour {
         flowersInGame.Remove(otherFlower);
         Destroy(otherFlower);
         flowersInGame.Add(newFlower);
+        yield return new WaitForSeconds(1);
         mergeDone = true;
+        inMerge = false;
 	}
 
 	GameObject Combination(GameObject flower){
 		GameObject other = flower.GetComponent<CollideCheck>().otherFlower;
-		Debug.Log("Comibing " + flower.name + " and "+ other.name);
-		GameObject f = Instantiate(prefabs[0].Flower, (other.transform.position+flower.transform.position)/2, Quaternion.identity);
-		GameObject l = Instantiate(prefabs[0].Leaf, (other.transform.position+flower.transform.position)/2, Quaternion.identity);
+		int lCorners = flower.GetComponent<PlantInfo>().LeafCorners + other.GetComponent<PlantInfo>().LeafCorners;
+		int fCorners = flower.GetComponent<PlantInfo>().FlowerCorners + other.GetComponent<PlantInfo>().FlowerCorners;
+		if(lCorners < 1) lCorners = -1;
+		if(lCorners > 2) lCorners = 2;
+		if(fCorners < 1) fCorners = -1;
+		if(fCorners > 6) fCorners = 6;
+		int i;
+		for(i=0; i<prefabs.Length; i++){
+			if(prefabs[i].GetComponent<PlantInfo>().LeafCorners == lCorners && 
+				prefabs[i].GetComponent<PlantInfo>().FlowerCorners == fCorners){
+				break;
+			}
+		}
+		GameObject f = Instantiate(prefabs[i], (other.transform.position+flower.transform.position)/2, Quaternion.identity);
 		f.transform.parent = flower.transform.parent;
-		l.transform.parent = f.transform;
 		return f;
+	}
+
+	void AddNewFlowers(){
+		for(int i=0; i<2; i++){
+			int a = Random.Range(0,prefabs.Length);
+			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), -1), Quaternion.identity);
+			f.transform.parent = gameObject.transform;
+			flowersInGame.Add(f);
+		}
 	}
 }

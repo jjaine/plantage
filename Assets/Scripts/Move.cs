@@ -15,8 +15,6 @@ public class Move : MonoBehaviour {
 	void Update () {
 		x = Input.mousePosition.x;
     	y = Input.mousePosition.y;
-    	if(PlayTurn.play)
-    		transform.position = new Vector3(transform.position.x+0.0001f, transform.position.y, transform.position.z);
 	}
 	void OnMouseDrag(){
 		if(!PlayTurn.play){
