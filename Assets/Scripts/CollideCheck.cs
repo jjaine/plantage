@@ -5,12 +5,14 @@ using UnityEngine;
 public class CollideCheck : MonoBehaviour {
 
 	public bool collides = false;
+	public GameObject otherFlower;
+	public bool inMerge = false;
 
 	void OnTriggerStay2D(Collider2D other){
 		if(PlayTurn.play){
 			if(other.tag == "Flower"){
 				collides=true;
-				Debug.Log("Collisions detected with " + other.name);
+				otherFlower = other.gameObject;
 			}
 		}
 	}

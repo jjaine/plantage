@@ -13,7 +13,7 @@ public class PlayTurn : MonoBehaviour {
 	public Button button;
 	public Sprite pauseButton;
 	public Sprite playButton;
-	List<GameObject> flowersInGame;
+	public List<GameObject> flowersInGame;
  
  	[System.Serializable]
     public class Plant
@@ -37,10 +37,17 @@ public class PlayTurn : MonoBehaviour {
 
 			//check collisions
 			foreach (GameObject flower in flowersInGame){
-				if(flower.GetComponent<CollideCheck>().collides){
-					//merge!
-					Debug.Log("MERGE");
-					StartCoroutine(Merge());
+				if(flower!=null){
+					if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
+						//merge!
+						foundCollision = true;
+						GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
+						if(otherFlower){
+							GameObject newFlower = Combination(flower);
+							StartCoroutine(Merge(flower, newFlower, otherFlower));
+						}
+						break;
+					}
 				}
 			}
 
@@ -50,7 +57,6 @@ public class PlayTurn : MonoBehaviour {
 				button.image.sprite = playButton;
 				mergeDone = false;
 			}
-
 		}
 	}
 
@@ -59,8 +65,29 @@ public class PlayTurn : MonoBehaviour {
 		play = true;
 	}
 
-	IEnumerator Merge(){
-        yield return new WaitForSeconds(5);
+	IEnumerator Wait(){
+		yield return new WaitForSeconds(1);
+	}
+
+	IEnumerator Merge(GameObject flower, GameObject newFlower, GameObject otherFlower){
+		flower.GetComponent<CollideCheck>().inMerge = true;
+		otherFlower.GetComponent<CollideCheck>().inMerge = true;
+        yield return new WaitForSeconds(1);
+        flowersInGame.Remove(flower);
+        Destroy(flower);
+        flowersInGame.Remove(otherFlower);
+        Destroy(otherFlower);
+        flowersInGame.Add(newFlower);
         mergeDone = true;
+	}
+
+	GameObject Combination(GameObject flower){
+		GameObject other = flower.GetComponent<CollideCheck>().otherFlower;
+		Debug.Log("Comibing " + flower.name + " and "+ other.name);
+		GameObject f = Instantiate(prefabs[0].Flower, (other.transform.position+flower.transform.position)/2, Quaternion.identity);
+		GameObject l = Instantiate(prefabs[0].Leaf, (other.transform.position+flower.transform.position)/2, Quaternion.identity);
+		f.transform.parent = flower.transform.parent;
+		l.transform.parent = f.transform;
+		return f;
 	}
 }
