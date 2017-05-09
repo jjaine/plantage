@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Flower_merge" ID="{37D04437-9F1B-4990-9272-BBCEEDC250F1}">
+				<Event Name="Play_Flower_Merge" ID="{37D04437-9F1B-4990-9272-BBCEEDC250F1}">
 					<ChildrenList>
 						<Action Name="Play" ID="{75B8D7A8-ED47-4FA0-A2AC-D047B49E4230}" ShortID="176637370" Type="Play" Scope="One" Global="false">
 							<ElementList>
@@ -16,7 +16,24 @@
 				</Event>
 				<Event Name="Play_Music" ID="{A9DA3041-9548-46A1-82FC-15A192F0AD8B}">
 					<ChildrenList>
-						<Action Name="Play" ID="{732263DD-7B28-463D-9B48-04E6B669D6B4}" ShortID="952279426" Type="Play" Scope="One" Global="false"/>
+						<Action Name="Play" ID="{732263DD-7B28-463D-9B48-04E6B669D6B4}" ShortID="952279426" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D712960D-4E8B-4184-9759-33AE753683AD}" Global="false">
+									<ObjectRef Name="BGM" ID="{DF0E9583-E653-48DB-8E6F-57C8302951EF}" WorkUnitID="{69D1E00E-3E44-4C04-A484-9B841B3A0944}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Merge_Fail" ID="{C031764D-FB72-47D5-BBB6-E23DF064AC5B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{166BBD2D-8809-4BB3-925B-9F9EC9272A12}" ShortID="187131192" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3F739F6D-5036-4B2F-B0A8-6E14970935DB}" Global="false">
+									<ObjectRef Name="Merge_Fail" ID="{6EB9290E-29B8-47CB-BE2B-35AEF1FB7514}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>
