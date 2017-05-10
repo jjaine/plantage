@@ -114,7 +114,21 @@ public class PlayTurn : MonoBehaviour {
 	}
 
 	string CombineColors(string c1, string c2){
-		if(c1=="Red"){
+		if(c1=="Brown" || c2=="Brown")
+			return "Brown";
+		else if(c1=="Pink" || c2=="Pink")
+			return "Pink";
+		else if(c1=="OrangeRed" || c2=="OrangeRed")
+			return "OrangeRed";
+		else if(c1=="OrangeYellow" || c2=="OrangeYellow")
+			return "OrangeYellow";
+		else if(c1=="GreenBlue" || c2=="GreenBlue")
+			return "GreenBlue";
+		else if(c1=="GreenYellow" || c2=="GreenYellow")
+			return "GreenYellow";
+		else if(c1=="VioletBlue" || c2=="VioletBlue")
+			return "VioletBlue";
+		else if(c1=="Red"){
 			if(c2=="Red")
 				return "Red";
 			if(c2=="Yellow")
@@ -186,27 +200,6 @@ public class PlayTurn : MonoBehaviour {
 			if(c2=="Blue")
 				return "VioletBlue";
 		}
-		else if(c1=="Brown")
-			if(c2=="Brown")
-				return "Brown";
-		else if(c1=="Pink")
-			if(c2=="Pink")
-				return "Pink";
-		else if(c1=="OrangeRed")
-			if(c2=="OrangeRed")
-				return "OrangeRed";
-		else if(c1=="OrangeYellow")
-			if(c2=="OrangeYellow")
-				return "OrangeYellow";
-		else if(c1=="GreenBlue")
-			if(c2=="GreenBlue")
-				return "GreenBlue";
-		else if(c1=="GreenYellow")
-			if(c2=="GreenYellow")
-				return "GreenYellow";
-		else if(c1=="VioletBlue")
-			if(c2=="VioletBlue")
-				return "VioletBlue";
 		
 		return "Not found!";
 	}
