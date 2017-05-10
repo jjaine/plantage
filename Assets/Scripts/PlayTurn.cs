@@ -36,10 +36,15 @@ public class PlayTurn : MonoBehaviour {
 				foreach (GameObject flower in flowersInGame){
 					if(flower!=null){
 						flower.GetComponent<PlantInfo>().turnsLeft--;
-						Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
-						prev.a = ((float)flower.GetComponent<PlantInfo>().turnsLeft+1)/3;
-						flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
-						flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+						if(flower.GetComponent<PlantInfo>().turnsLeft < 2){
+							Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+							prev.a = 0.8f;
+							flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
+							flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+						}
+						if(flower.GetComponent<PlantInfo>().turnsLeft < 1){
+							StartCoroutine(Blinking(flower));
+						}
 					}
 				}
 				//instantiate new things
@@ -52,10 +57,15 @@ public class PlayTurn : MonoBehaviour {
 				foreach (GameObject flower in flowersInGame){
 					if(flower!=null){
 						flower.GetComponent<PlantInfo>().turnsLeft--;
-						Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
-						prev.a = ((float)flower.GetComponent<PlantInfo>().turnsLeft+1)/3;
-						flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
-						flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+						if(flower.GetComponent<PlantInfo>().turnsLeft < 2){
+							Color prev = flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+							prev.a = 0.8f;
+							flower.transform.GetChild(0).GetComponent<SpriteRenderer>().color = prev;
+							flower.transform.GetChild(1).GetComponent<SpriteRenderer>().color = prev;
+						}
+						if(flower.GetComponent<PlantInfo>().turnsLeft < 1){
+							StartCoroutine(Blinking(flower));
+						}
 					}
 				}
 				//instantiate new things
@@ -66,6 +76,17 @@ public class PlayTurn : MonoBehaviour {
 			}
 		}
 	}
+
+	IEnumerator Blinking(GameObject flower){
+		while(true){
+	        flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+	        flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+	        yield return new WaitForSeconds(0.3f);
+	        flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+	        flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
+	        yield return new WaitForSeconds(1.5f);
+	    }
+    }
 
 	public void Play(){
 		button.image.sprite = pauseButton;
