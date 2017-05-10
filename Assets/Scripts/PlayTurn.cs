@@ -17,6 +17,10 @@ public class PlayTurn : MonoBehaviour {
 	public Sprite pauseButton;
 	public Sprite playButton; 
 
+	[Header("Map stuff")]
+	public GameObject CenterCircle;
+	float target;
+
  	// Use this for initialization
 	void Start () {
 		flowersInGame = new List<GameObject>();
@@ -47,6 +51,8 @@ public class PlayTurn : MonoBehaviour {
 						}
 					}
 				}
+				//rotate circle
+				target = CenterCircle.transform.eulerAngles.z-120;
 				//instantiate new things
 				AddNewFlowers();
 				play = false;
@@ -68,6 +74,8 @@ public class PlayTurn : MonoBehaviour {
 						}
 					}
 				}
+				//rotate circle
+				target = CenterCircle.transform.eulerAngles.z-120;
 				//instantiate new things
 				AddNewFlowers();
 				play = false;
@@ -75,10 +83,11 @@ public class PlayTurn : MonoBehaviour {
 				mergeDone = false;
 			}
 		}
+		CenterCircle.transform.rotation = Quaternion.Lerp(CenterCircle.transform.rotation, Quaternion.Euler(0,0,target),0.1f);
 	}
 
 	IEnumerator Blinking(GameObject flower){
-		while(true){
+		while(true && flower!=null){
 	        flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
 	        flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
 	        yield return new WaitForSeconds(0.3f);
@@ -264,7 +273,7 @@ public class PlayTurn : MonoBehaviour {
 	void AddNewFlowers(){
 		for(int i=0; i<2; i++){
 			int a = Random.Range(0,27);
-			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), -1), Quaternion.identity);
+			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 3.0f), -1), Quaternion.identity);
 			f.transform.parent = gameObject.transform;
 			flowersInGame.Add(f);
 		}
