@@ -113,6 +113,35 @@ public class PlayTurn : MonoBehaviour {
         inMerge = false;
 	}
 
+	string CombineColors(string c1, string c2){
+		if(c1=="Red"){
+			if(c2=="Red")
+				return "Red";
+			if(c2=="Yellow")
+				return "Orange";
+			if(c2=="Blue")
+				return "Violet";
+		}
+		else if(c1=="Yellow"){
+			if(c2=="Yellow")
+				return "Yellow";
+			if(c2=="Blue")
+				return "Green";
+			if(c2=="Red")
+				return "Orange";
+		}
+		else if(c1=="Blue"){
+			if(c2=="Blue")
+				return "Blue";
+			if(c2=="Red")
+				return "Violet";
+			if(c2=="Yellow")
+				return "Green";
+		}
+		
+		return "Not found!";
+	}
+
 	GameObject Combination(GameObject flower){
 		GameObject other = flower.GetComponent<CollideCheck>().otherFlower;
 		int lCorners = flower.GetComponent<PlantInfo>().LeafCorners + other.GetComponent<PlantInfo>().LeafCorners;
@@ -121,10 +150,13 @@ public class PlayTurn : MonoBehaviour {
 		if(lCorners > 2) lCorners = 2;
 		if(fCorners < 1) fCorners = -1;
 		if(fCorners > 6) fCorners = 6;
+		string color = CombineColors(flower.GetComponent<PlantInfo>().Color, other.GetComponent<PlantInfo>().Color);
+
 		int i;
 		for(i=0; i<prefabs.Length; i++){
 			if(prefabs[i].GetComponent<PlantInfo>().LeafCorners == lCorners && 
-				prefabs[i].GetComponent<PlantInfo>().FlowerCorners == fCorners){
+				prefabs[i].GetComponent<PlantInfo>().FlowerCorners == fCorners && 
+				prefabs[i].GetComponent<PlantInfo>().Color == color){
 				break;
 			}
 		}
@@ -142,7 +174,7 @@ public class PlayTurn : MonoBehaviour {
 
 	void AddNewFlowers(){
 		for(int i=0; i<2; i++){
-			int a = Random.Range(0,7);
+			int a = Random.Range(0,27);
 			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), -1), Quaternion.identity);
 			f.transform.parent = gameObject.transform;
 			flowersInGame.Add(f);
