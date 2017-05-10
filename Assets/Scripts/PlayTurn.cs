@@ -157,6 +157,8 @@ public class PlayTurn : MonoBehaviour {
 				return "GreenBlue";
 		}
 		else if(c1=="Orange"){
+			if(c2=="Orange")
+				return "Orange";
 			if(c2=="Blue")
 				return "Brown";
 			if(c2=="Yellow")
@@ -165,6 +167,8 @@ public class PlayTurn : MonoBehaviour {
 				return "OrangeRed";
 		}
 		else if(c1=="Green"){
+			if(c2=="Green")
+				return "Green";
 			if(c2=="Red")
 				return "Brown";
 			if(c2=="Blue")
@@ -173,6 +177,8 @@ public class PlayTurn : MonoBehaviour {
 				return "GreenYellow";
 		}
 		else if(c1=="Violet"){
+			if(c2=="Violet")
+				return "Violet";
 			if(c2=="Yellow")
 				return "Brown";
 			if(c2=="Red")
@@ -180,6 +186,27 @@ public class PlayTurn : MonoBehaviour {
 			if(c2=="Blue")
 				return "VioletBlue";
 		}
+		else if(c1=="Brown")
+			if(c2=="Brown")
+				return "Brown";
+		else if(c1=="Pink")
+			if(c2=="Pink")
+				return "Pink";
+		else if(c1=="OrangeRed")
+			if(c2=="OrangeRed")
+				return "OrangeRed";
+		else if(c1=="OrangeYellow")
+			if(c2=="OrangeYellow")
+				return "OrangeYellow";
+		else if(c1=="GreenBlue")
+			if(c2=="GreenBlue")
+				return "GreenBlue";
+		else if(c1=="GreenYellow")
+			if(c2=="GreenYellow")
+				return "GreenYellow";
+		else if(c1=="VioletBlue")
+			if(c2=="VioletBlue")
+				return "VioletBlue";
 		
 		return "Not found!";
 	}
