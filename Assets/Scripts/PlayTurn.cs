@@ -161,7 +161,13 @@ public class PlayTurn : MonoBehaviour {
 			}
 		}
 		if(i==prefabs.Length){
-			Debug.Log("Invalid merge!");
+			Debug.Log("Invalid merge when merging " 
+				+ flower.GetComponent<PlantInfo>().Color + " " 
+				+ flower.GetComponent<PlantInfo>().FlowerCorners + " "
+				+ flower.GetComponent<PlantInfo>().LeafCorners + " with "
+				+ other.GetComponent<PlantInfo>().Color + " " 
+				+ other.GetComponent<PlantInfo>().FlowerCorners + ", "
+				+ other.GetComponent<PlantInfo>().LeafCorners);
 			return null;
 		}
 		else{
