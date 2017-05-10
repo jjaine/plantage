@@ -19,7 +19,7 @@
 						<Action Name="Play" ID="{732263DD-7B28-463D-9B48-04E6B669D6B4}" ShortID="952279426" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{D712960D-4E8B-4184-9759-33AE753683AD}" Global="false">
-									<ObjectRef Name="BGM" ID="{DF0E9583-E653-48DB-8E6F-57C8302951EF}" WorkUnitID="{69D1E00E-3E44-4C04-A484-9B841B3A0944}"/>
+									<ObjectRef Name="parts separately" ID="{056A09CB-8295-4D2F-9163-C900BEBB0344}" WorkUnitID="{69D1E00E-3E44-4C04-A484-9B841B3A0944}"/>
 								</Element>
 							</ElementList>
 						</Action>

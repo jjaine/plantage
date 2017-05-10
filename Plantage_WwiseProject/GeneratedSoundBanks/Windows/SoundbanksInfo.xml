@@ -24,7 +24,11 @@
 			<IncludedMemoryFiles>
 				<File Id="45682085" Language="SFX">
 					<ShortName>SFX_Merge_Fail_03.wav</ShortName>
-					<Path>SFX\SFX_Merge_Fail_03_EE4C2B98.wem</Path>
+					<Path>SFX\SFX_Merge_Fail_03_5AE1C2C6.wem</Path>
+				</File>
+				<File Id="74088700" Language="SFX">
+					<ShortName>plantage bgm part4_notail.wav</ShortName>
+					<Path>SFX\plantage bgm part4_notail_E95633E1.wem</Path>
 				</File>
 				<File Id="77345040" Language="SFX">
 					<ShortName>SFX_Spawn_02.wav</ShortName>
@@ -32,11 +36,15 @@
 				</File>
 				<File Id="80703079" Language="SFX">
 					<ShortName>SFX_Flower_Merge_01.wav</ShortName>
-					<Path>SFX\SFX_Flower_Merge_01_90BE6698.wem</Path>
+					<Path>SFX\SFX_Flower_Merge_01_5F923C99.wem</Path>
+				</File>
+				<File Id="94043669" Language="SFX">
+					<ShortName>plantage bgm part3_notail.wav</ShortName>
+					<Path>SFX\plantage bgm part3_notail_E95633E1.wem</Path>
 				</File>
 				<File Id="236541733" Language="SFX">
 					<ShortName>SFX_Merge_Fail_01.wav</ShortName>
-					<Path>SFX\SFX_Merge_Fail_01_C25CE4F9.wem</Path>
+					<Path>SFX\SFX_Merge_Fail_01_00DBE4AC.wem</Path>
 				</File>
 				<File Id="422716530" Language="SFX">
 					<ShortName>SFX_Merge_Fail_02.wav</ShortName>
@@ -44,15 +52,19 @@
 				</File>
 				<File Id="444226966" Language="SFX">
 					<ShortName>SFX_Flower_Merge_02.wav</ShortName>
-					<Path>SFX\SFX_Flower_Merge_02_C49446E2.wem</Path>
+					<Path>SFX\SFX_Flower_Merge_02_F2E9DFCE.wem</Path>
 				</File>
-				<File Id="548708095" Language="SFX">
-					<ShortName>plantage bgm v1.wav</ShortName>
-					<Path>SFX\plantage bgm v1_FF5731BF.wem</Path>
+				<File Id="653058830" Language="SFX">
+					<ShortName>plantage bgm part2_notail.wav</ShortName>
+					<Path>SFX\plantage bgm part2_notail_E95633E1.wem</Path>
 				</File>
 				<File Id="726620375" Language="SFX">
 					<ShortName>SFX_Flower_Merge_03.wav</ShortName>
-					<Path>SFX\SFX_Flower_Merge_03_0796AB8F.wem</Path>
+					<Path>SFX\SFX_Flower_Merge_03_98C23EA6.wem</Path>
+				</File>
+				<File Id="760091388" Language="SFX">
+					<ShortName>plantage bgm part1_notail.wav</ShortName>
+					<Path>SFX\plantage bgm part1_notail_E95633E1.wem</Path>
 				</File>
 				<File Id="875391029" Language="SFX">
 					<ShortName>SFX_Spawn_03.wav</ShortName>

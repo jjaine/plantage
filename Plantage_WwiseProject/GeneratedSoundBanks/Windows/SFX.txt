@@ -5,14 +5,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	45682085	SFX_Merge_Fail_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Merge_Fail_03_EE4C2B98.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_03		8130
+	45682085	SFX_Merge_Fail_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Merge_Fail_03_5AE1C2C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_03		8130
+	74088700	plantage bgm part4_notail	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\plantage bgm part4_notail_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\BGM\parts separately\plantage bgm part4_notail		233150
 	77345040	SFX_Spawn_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Spawn_02_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\SFX_Spawn_02		11755
-	80703079	SFX_Flower_Merge_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_01_90BE6698.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_01		9111
-	236541733	SFX_Merge_Fail_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Merge_Fail_01_C25CE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_01		7369
+	80703079	SFX_Flower_Merge_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_01_5F923C99.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_01		9111
+	94043669	plantage bgm part3_notail	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\plantage bgm part3_notail_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\BGM\parts separately\plantage bgm part3_notail		268112
+	236541733	SFX_Merge_Fail_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Merge_Fail_01_00DBE4AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_01		7369
 	422716530	SFX_Merge_Fail_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Merge_Fail_02_01C5F622.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_02		7612
-	444226966	SFX_Flower_Merge_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_02_C49446E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_02		8925
-	548708095	plantage bgm v1	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\plantage bgm v1_FF5731BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\BGM\plantage bgm v1		497269
-	726620375	SFX_Flower_Merge_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_03_0796AB8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_03		8436
+	444226966	SFX_Flower_Merge_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_02_F2E9DFCE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_02		8925
+	653058830	plantage bgm part2_notail	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\plantage bgm part2_notail_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\BGM\parts separately\plantage bgm part2_notail		228018
+	726620375	SFX_Flower_Merge_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Flower_Merge_03_98C23EA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Flower_Merge_03		8436
+	760091388	plantage bgm part1_notail	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\plantage bgm part1_notail_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\BGM\parts separately\plantage bgm part1_notail		241119
 	875391029	SFX_Spawn_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Spawn_03_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\SFX_Spawn_03		11327
 	1027639518	SFX_Spawn_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Windows\SFX\SFX_Spawn_01_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\SFX_Spawn_01		11722
 
