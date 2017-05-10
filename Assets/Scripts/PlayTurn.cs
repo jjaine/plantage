@@ -142,7 +142,7 @@ public class PlayTurn : MonoBehaviour {
 
 	void AddNewFlowers(){
 		for(int i=0; i<2; i++){
-			int a = Random.Range(0,prefabs.Length);
+			int a = Random.Range(0,7);
 			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), -1), Quaternion.identity);
 			f.transform.parent = gameObject.transform;
 			flowersInGame.Add(f);
