@@ -22,6 +22,9 @@ public class PlayTurn : MonoBehaviour {
 	public GameObject LeftPart;
 	public GameObject TopPart;
 	public GameObject RightPart;
+	public GameObject LeftBar;
+	public GameObject RightBar;
+	public GameObject BottomBar;
 	float target;
 
  	// Use this for initialization
@@ -37,6 +40,10 @@ public class PlayTurn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(play){
+
+			BottomBar.GetComponent<Collider2D>().enabled=false;
+			RightBar.GetComponent<Collider2D>().enabled=false;
+			LeftBar.GetComponent<Collider2D>().enabled=false;
 
 			//check collisions
 			bool c = CheckCollisions();
@@ -114,8 +121,14 @@ public class PlayTurn : MonoBehaviour {
 				button.image.sprite = playButton;
 				mergeDone = false;
 			}
+			StartCoroutine(Wait());
 		}
+
 		CenterCircle.transform.rotation = Quaternion.Lerp(CenterCircle.transform.rotation, Quaternion.Euler(0,0,target),0.1f);
+		
+		//BottomBar.GetComponent<Collider2D>().enabled=true;
+		//LeftBar.GetComponent<Collider2D>().enabled=true;
+		//RightBar.GetComponent<Collider2D>().enabled=true;
 	}
 
 	IEnumerator Blinking(GameObject flower){
@@ -129,18 +142,40 @@ public class PlayTurn : MonoBehaviour {
 	    }
     }
 
+    IEnumerator Wait(){
+    	yield return new WaitForSeconds(5);
+    	BottomBar.GetComponent<Collider2D>().enabled=true;
+		LeftBar.GetComponent<Collider2D>().enabled=true;
+		RightBar.GetComponent<Collider2D>().enabled=true;
+    }
+
 	public void Play(){
 		button.image.sprite = pauseButton;
 		play = true;
 	}
 
 	bool CheckCollisions(){
+
+		Collider2D[] cols = Physics2D.OverlapCircleAll(new Vector2(0, -0.71f), 1f);
+
 		foreach (GameObject flower in flowersInGame){
 			if(flower!=null){
 				if(flower.GetComponent<PlantInfo>().turnsLeft == 0){
 					Destroy(flower);
 				}
 				else{
+					for(int i=0; i<cols.Length; i++){
+						if(cols[i].gameObject == flower)
+							flower.transform.parent = CenterCircle.transform;
+					}
+					if(flower.GetComponent<Collider2D>().IsTouching(LeftPart.GetComponent<Collider2D>())){
+						flower.transform.parent = LeftPart.transform;
+					} else if(flower.GetComponent<Collider2D>().IsTouching(RightPart.GetComponent<Collider2D>())){
+						flower.transform.parent = RightPart.transform;
+					} else if(flower.GetComponent<Collider2D>().IsTouching(TopPart.GetComponent<Collider2D>())){
+						flower.transform.parent = TopPart.transform;
+					}
+
 					if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
 						//merge!
 						GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
@@ -306,11 +341,11 @@ public class PlayTurn : MonoBehaviour {
 		int a = Random.Range(0,27);
 		Vector3 pos = Vector3.zero;
 		if(part.transform.name == "LeftPart")
-			pos = new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-5.0f, -1.0f), -1);
+			pos = new Vector3(Random.Range(-9.0f, -3.5f), Random.Range(-5.0f, 0.0f), -1);
 		if(part.transform.name == "TopPart")
-			pos = new Vector3(Random.Range(-3.0f, 3.0f), Random.Range(1.5f, 2.5f), -1);
+			pos = new Vector3(Random.Range(-3f, 3f), Random.Range(3f, 5f), -1);
 		if(part.transform.name == "RightPart")
-			pos = new Vector3(Random.Range(2.0f, 5.0f), Random.Range(-5.0f, -1.0f), -1);
+			pos = new Vector3(Random.Range(3.5f, 9.0f), Random.Range(-5.0f, 0.0f), -1);
 		GameObject f = Instantiate(prefabs[a], pos, Quaternion.identity);
 		f.transform.parent = part.transform;
 		flowersInGame.Add(f);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour {
 
 	float x,y;
+	public bool allow = true;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +18,10 @@ public class Move : MonoBehaviour {
     	y = Input.mousePosition.y;
 	}
 	void OnMouseDrag(){
-		if(!PlayTurn.play){
-			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(x,y,9.0f));
+		if(allow){
+			if(!PlayTurn.play && !GetComponent<CollideCheck>().ret){
+				transform.position = Camera.main.ScreenToWorldPoint(new Vector3(x,y,9.0f));
+			}
 		}
 	}
 }
