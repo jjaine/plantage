@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2E466D26-A6F9-48F2-96E1-2A89EAEEB058}" SchemaVersion="75">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2E466D26-A6F9-48F2-96E1-2A89EAEEB058}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2E466D26-A6F9-48F2-96E1-2A89EAEEB058}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="music &amp; SFX" ID="{58DAFE99-EFBA-4433-8E14-A92AFB69E83B}">
+					<ObjectList>
+						<ObjectRef Name="in-game music" ID="{F3CC08BD-DB65-49C9-8E89-9C010A5FAE83}" WorkUnitID="{08656F20-B54E-4E20-ABB5-7DB5C0B5C898}"/>
+						<ObjectRef Name="Flower_merge" ID="{B4EC280A-5F3C-4857-94E1-B9A7B468B438}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+						<ObjectRef Name="Merge_Fail" ID="{6EB9290E-29B8-47CB-BE2B-35AEF1FB7514}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+						<ObjectRef Name="Spawn" ID="{27FB45F0-4708-4BB5-8FAD-FFC7327EBAB4}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

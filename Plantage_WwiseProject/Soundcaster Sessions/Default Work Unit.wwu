@@ -18,6 +18,10 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Flower_Die" ID="{51DF2D0D-0865-4FFB-AD72-22485AB9FF49}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Spawn" ID="{AD4935F1-3DAA-4122-AAF8-FC719A329550}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
 							<Position X="3" Y="0"/>
 						</Module>

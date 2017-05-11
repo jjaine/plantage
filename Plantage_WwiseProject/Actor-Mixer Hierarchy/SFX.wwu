@@ -228,6 +228,75 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Flower_Die" ID="{19DF46E9-DEF3-4B22-A638-CAB8706FDC7D}" ShortID="82615887">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Flower_Die_01" ID="{38EF4C7B-6659-4FCE-8419-4B8BACA4B938}" ShortID="318323560" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Die_01" ID="{4164DA28-BA35-4056-9E37-1E7F553242D5}" ShortID="485776491">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Die_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Die_01" ID="{4164DA28-BA35-4056-9E37-1E7F553242D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Flower_Die_02" ID="{79D6E2EF-1C4D-4BE5-A31B-69EB58A338E1}" ShortID="65851458" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Die_02" ID="{FA6D7F38-29B0-4728-86B6-F185666B47ED}" ShortID="580186404">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Die_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Die_02" ID="{FA6D7F38-29B0-4728-86B6-F185666B47ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Flower_Die_03" ID="{D17DB5E2-DB9D-4142-9115-AB1FBCC9CF5F}" ShortID="336624467" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Flower_Die_03" ID="{FBDEB3F2-AB4D-4279-A5A7-F59A928A801E}" ShortID="330192161">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Flower_Die_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Flower_Die_03" ID="{FBDEB3F2-AB4D-4279-A5A7-F59A928A801E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
