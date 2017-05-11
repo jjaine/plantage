@@ -71,19 +71,23 @@ public class PlayTurn : MonoBehaviour {
 				if(TopPart.transform.childCount < 3){
 					for(int i=0; i<3-TopPart.transform.childCount; i++)
 						AddNewFlower(TopPart);
+					AkSoundEngine.PostEvent("Play_Spawn", gameObject);
 				}
 				if(LeftPart.transform.childCount < 3){
 					for(int i=0; i<3-LeftPart.transform.childCount; i++)
 						AddNewFlower(LeftPart);
+					AkSoundEngine.PostEvent("Play_Spawn", gameObject);
 				}
 				if(RightPart.transform.childCount < 3){
 					for(int i=0; i<3-RightPart.transform.childCount; i++)
 						AddNewFlower(RightPart);
+					AkSoundEngine.PostEvent("Play_Spawn", gameObject);
 				}
 
 				play = false;
 				button.image.sprite = playButton;
 				mergeDone = false;
+				AkSoundEngine.PostEvent("Play_Spinning_Wheel", gameObject);
 			}
 			else if(!c){
 				foreach (GameObject flower in flowersInGame){
@@ -120,8 +124,10 @@ public class PlayTurn : MonoBehaviour {
 				play = false;
 				button.image.sprite = playButton;
 				mergeDone = false;
+				AkSoundEngine.PostEvent("Play_Spinning_Wheel", gameObject);
 			}
 			StartCoroutine(Wait());
+
 		}
 
 		CenterCircle.transform.rotation = Quaternion.Lerp(CenterCircle.transform.rotation, Quaternion.Euler(0,0,target),0.1f);
@@ -149,18 +155,26 @@ public class PlayTurn : MonoBehaviour {
 		RightBar.GetComponent<Collider2D>().enabled=true;
     }
 
+    IEnumerator StartPlay(){
+    	yield return new WaitForSeconds(0.5f);
+    	play = true;
+    }
+
 	public void Play(){
 		button.image.sprite = pauseButton;
-		play = true;
+		AkSoundEngine.PostEvent("Play_Button", gameObject);
+		StartCoroutine(StartPlay());
 	}
 
 	bool CheckCollisions(){
 
-		Collider2D[] cols = Physics2D.OverlapCircleAll(new Vector2(0, -0.71f), 1f);
+		Collider2D[] cols = Physics2D.OverlapCircleAll(new Vector2(0, -0.71f), 1.2f);
 
 		foreach (GameObject flower in flowersInGame){
 			if(flower!=null){
 				if(flower.GetComponent<PlantInfo>().turnsLeft == 0){
+					AkSoundEngine.PostEvent("Play_Flower_Die", gameObject);
+
 					Destroy(flower);
 				}
 				else{
@@ -198,6 +212,8 @@ public class PlayTurn : MonoBehaviour {
 		inMerge = true;
 		flower.GetComponent<CollideCheck>().inMerge = true;
 		otherFlower.GetComponent<CollideCheck>().inMerge = true;
+		AkSoundEngine.PostEvent("Play_Flower_Merge", gameObject);
+
         yield return new WaitForSeconds(1);
         flowersInGame.Remove(flower);
         Destroy(flower);

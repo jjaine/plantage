@@ -30,7 +30,9 @@ public class CreateGoal : MonoBehaviour {
 			if(o!=null && o.GetComponent<PlantInfo>().Color == c &&
 				o.GetComponent<PlantInfo>().FlowerCorners == f &&
 				o.GetComponent<PlantInfo>().LeafCorners == l){
-				Start();
+					Start();
+					AkSoundEngine.PostEvent("Play_Goal", gameObject);
+
 			}
 		}
 	}
