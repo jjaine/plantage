@@ -19,13 +19,19 @@ public class PlayTurn : MonoBehaviour {
 
 	[Header("Map stuff")]
 	public GameObject CenterCircle;
+	public GameObject LeftPart;
+	public GameObject TopPart;
+	public GameObject RightPart;
 	float target;
 
  	// Use this for initialization
 	void Start () {
 		flowersInGame = new List<GameObject>();
-
-		AddNewFlowers();
+		for(int i=0; i<3; i++){
+			AddNewFlower(TopPart);
+			AddNewFlower(LeftPart);
+			AddNewFlower(RightPart);
+		}
 	}
 	
 	// Update is called once per frame
@@ -53,8 +59,21 @@ public class PlayTurn : MonoBehaviour {
 				}
 				//rotate circle
 				target = CenterCircle.transform.eulerAngles.z-120;
+
 				//instantiate new things
-				AddNewFlowers();
+				if(TopPart.transform.childCount < 3){
+					for(int i=0; i<3-TopPart.transform.childCount; i++)
+						AddNewFlower(TopPart);
+				}
+				if(LeftPart.transform.childCount < 3){
+					for(int i=0; i<3-LeftPart.transform.childCount; i++)
+						AddNewFlower(LeftPart);
+				}
+				if(RightPart.transform.childCount < 3){
+					for(int i=0; i<3-RightPart.transform.childCount; i++)
+						AddNewFlower(RightPart);
+				}
+
 				play = false;
 				button.image.sprite = playButton;
 				mergeDone = false;
@@ -76,8 +95,21 @@ public class PlayTurn : MonoBehaviour {
 				}
 				//rotate circle
 				target = CenterCircle.transform.eulerAngles.z-120;
+
 				//instantiate new things
-				AddNewFlowers();
+				if(TopPart.transform.childCount < 3){
+					for(int i=0; i<3-TopPart.transform.childCount; i++)
+						AddNewFlower(TopPart);
+				}
+				if(LeftPart.transform.childCount < 3){
+					for(int i=0; i<3-LeftPart.transform.childCount; i++)
+						AddNewFlower(LeftPart);
+				}
+				if(RightPart.transform.childCount < 3){
+					for(int i=0; i<3-RightPart.transform.childCount; i++)
+						AddNewFlower(RightPart);
+				}				
+
 				play = false;
 				button.image.sprite = playButton;
 				mergeDone = false;
@@ -270,12 +302,17 @@ public class PlayTurn : MonoBehaviour {
 		
 	}
 
-	void AddNewFlowers(){
-		for(int i=0; i<2; i++){
-			int a = Random.Range(0,27);
-			GameObject f = Instantiate(prefabs[a], new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 3.0f), -1), Quaternion.identity);
-			f.transform.parent = gameObject.transform;
-			flowersInGame.Add(f);
-		}
+	void AddNewFlower(GameObject part){
+		int a = Random.Range(0,27);
+		Vector3 pos = Vector3.zero;
+		if(part.transform.name == "LeftPart")
+			pos = new Vector3(Random.Range(-5.0f, -1.0f), Random.Range(-5.0f, -1.0f), -1);
+		if(part.transform.name == "TopPart")
+			pos = new Vector3(Random.Range(-3.0f, 3.0f), Random.Range(1.5f, 2.5f), -1);
+		if(part.transform.name == "RightPart")
+			pos = new Vector3(Random.Range(2.0f, 5.0f), Random.Range(-5.0f, -1.0f), -1);
+		GameObject f = Instantiate(prefabs[a], pos, Quaternion.identity);
+		f.transform.parent = part.transform;
+		flowersInGame.Add(f);
 	}
 }
