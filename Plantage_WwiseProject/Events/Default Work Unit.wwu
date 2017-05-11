@@ -19,7 +19,7 @@
 						<Action Name="Play" ID="{732263DD-7B28-463D-9B48-04E6B669D6B4}" ShortID="952279426" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{D712960D-4E8B-4184-9759-33AE753683AD}" Global="false">
-									<ObjectRef Name="parts separately" ID="{056A09CB-8295-4D2F-9163-C900BEBB0344}" WorkUnitID="{69D1E00E-3E44-4C04-A484-9B841B3A0944}"/>
+									<ObjectRef Name="in-game music" ID="{F3CC08BD-DB65-49C9-8E89-9C010A5FAE83}" WorkUnitID="{08656F20-B54E-4E20-ABB5-7DB5C0B5C898}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -42,6 +42,17 @@
 							<ElementList>
 								<Element ID="{BCF3FA77-9545-4AA5-8E2F-16ADBB2D2578}" Global="false">
 									<ObjectRef Name="Spawn" ID="{27FB45F0-4708-4BB5-8FAD-FFC7327EBAB4}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music" ID="{CD12518A-7EA1-4676-BB92-06BA2FF6FD5B}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{3F6CE3A3-7596-4DC2-9793-04ABB0B85F19}" ShortID="997154386" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4274CEFC-5A99-45AE-90CA-C60C45FFF4AA}" Global="false">
+									<ObjectRef Name="in-game music" ID="{F3CC08BD-DB65-49C9-8E89-9C010A5FAE83}" WorkUnitID="{08656F20-B54E-4E20-ABB5-7DB5C0B5C898}"/>
 								</Element>
 							</ElementList>
 						</Action>
