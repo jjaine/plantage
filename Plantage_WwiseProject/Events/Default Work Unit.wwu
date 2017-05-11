@@ -91,6 +91,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Goal" ID="{09C3C1C5-0B77-4B78-B91C-1E39AC2BFF48}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FA70982D-8C90-49CF-B070-EE70B321C214}" ShortID="689844579" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6D90A7B4-9034-4EC2-A98E-116C03D75ACF}" Global="false">
+									<ObjectRef Name="Goal" ID="{D4D76294-3442-410C-9E12-D6DCBC426CC7}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
