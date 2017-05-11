@@ -9,7 +9,7 @@
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+							<ObjectRef Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -87,7 +87,7 @@
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+							<ObjectRef Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -165,7 +165,7 @@
 							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+							<ObjectRef Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -180,6 +180,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Spawn_01" ID="{28C30FF8-486F-458A-87E0-6915ED6A56B4}" ShortID="1027639518">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.138948052994463"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Spawn_01.wav</AudioFile>
 								</AudioFileSource>
@@ -199,6 +202,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Spawn_02" ID="{F0146025-83B3-45DD-B1AC-FBAC8359C369}" ShortID="77345040">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="7.31032666873855E-02"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Spawn_02.wav</AudioFile>
 								</AudioFileSource>
@@ -218,6 +224,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Spawn_03" ID="{87552821-9866-4D33-9EF4-24387ADF8227}" ShortID="875391029">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.170574288937233"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Spawn_03.wav</AudioFile>
 								</AudioFileSource>
@@ -229,12 +238,19 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Flower_Die" ID="{19DF46E9-DEF3-4B22-A638-CAB8706FDC7D}" ShortID="82615887">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+							<ObjectRef Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -297,6 +313,68 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Button" ID="{E01839D6-A32B-4916-9B6F-FDB9F046DFE4}" ShortID="728027768">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Button_01" ID="{4994DCF4-2260-44F5-8A01-DBAAAD3A5652}" ShortID="353904609" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Button_01" ID="{D82472E3-B997-4278-B12B-6484F950B680}" ShortID="544080717">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Button_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Button_01" ID="{D82472E3-B997-4278-B12B-6484F950B680}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="Spinning_Wheel" ID="{846DD190-3C9F-405A-BBFA-B60E4A637751}" ShortID="739670118">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Spinning_Wheel_01" ID="{007D7C67-0CDA-456F-B8FF-6CF7C82CDD11}" ShortID="822767661" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EFD97CF3-0A67-4187-A6F8-97F40A804006}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Spinning_Wheel_01" ID="{60C2BF21-FC22-4C37-A6FA-18F41ABC5982}" ShortID="2137890">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Spinning_Wheel_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Spinning_Wheel_01" ID="{60C2BF21-FC22-4C37-A6FA-18F41ABC5982}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

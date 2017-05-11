@@ -9,7 +9,10 @@
 						<ObjectRef Name="Stop_Music" ID="{CD12518A-7EA1-4676-BB92-06BA2FF6FD5B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Music" ID="{A9DA3041-9548-46A1-82FC-15A192F0AD8B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Merge_Fail" ID="{C031764D-FB72-47D5-BBB6-E23DF064AC5B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Button" ID="{64EAE385-0AB9-48D5-930A-9D9C6A398EE2}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Flower_Merge" ID="{37D04437-9F1B-4990-9272-BBCEEDC250F1}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Spinning_Wheel" ID="{A69D71E6-FFD7-4AFD-AF4C-091DA0E5BDDE}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Flower_Die" ID="{51DF2D0D-0865-4FFB-AD72-22485AB9FF49}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

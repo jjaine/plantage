@@ -69,6 +69,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Button" ID="{64EAE385-0AB9-48D5-930A-9D9C6A398EE2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9DD4FFEE-CED1-4C36-B293-F25FEB93EE0E}" ShortID="814080385" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E473313D-C2DC-4BAC-B566-01233A305EC3}" Global="false">
+									<ObjectRef Name="Button" ID="{E01839D6-A32B-4916-9B6F-FDB9F046DFE4}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Spinning_Wheel" ID="{A69D71E6-FFD7-4AFD-AF4C-091DA0E5BDDE}">
+					<ChildrenList>
+						<Action Name="Play" ID="{14E2A282-89C4-4328-A350-2DEBE8229C9F}" ShortID="453780067" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0A7E5421-3B34-40A6-81AC-AFA21AEDF5D3}" Global="false">
+									<ObjectRef Name="Spinning_Wheel" ID="{846DD190-3C9F-405A-BBFA-B60E4A637751}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

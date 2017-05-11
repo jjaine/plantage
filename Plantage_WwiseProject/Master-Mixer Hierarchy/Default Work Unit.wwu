@@ -3,7 +3,18 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{052FE810-211F-47F0-A7E9-F2485D0B81D1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="Music" ID="{33171951-D527-4C7A-A306-56AD41887287}"/>
+						<Bus Name="In-game SFX" ID="{184D7D51-63D2-4C0F-AA31-AAF8D3B51EE2}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Plate_Small" ID="{5681977F-CD7F-4D09-AA58-118BEFA48C8C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>

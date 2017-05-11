@@ -14,6 +14,14 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Button" ID="{64EAE385-0AB9-48D5-930A-9D9C6A398EE2}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Spinning_Wheel" ID="{A69D71E6-FFD7-4AFD-AF4C-091DA0E5BDDE}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Merge_Fail" ID="{C031764D-FB72-47D5-BBB6-E23DF064AC5B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
 							<Position X="2" Y="0"/>
 						</Module>
