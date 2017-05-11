@@ -25,7 +25,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Flower_Merge_01" ID="{4948320A-5655-479A-A216-42596B07F68D}" ShortID="80703079">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="6.45596935897879E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0645596935897879"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Flower_Merge_01.wav</AudioFile>
@@ -47,7 +47,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Flower_Merge_02" ID="{C1C52F95-E0C2-4EAC-BAA8-0560A86CB18D}" ShortID="444226966">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="4.15518491660624E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0415518491660624"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Flower_Merge_02.wav</AudioFile>
@@ -69,7 +69,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Flower_Merge_03" ID="{F92A6EAD-9342-4D22-B4BB-1F1AB59472CE}" ShortID="726620375">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="5.25713364872176E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0525713364872176"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Flower_Merge_03.wav</AudioFile>
@@ -125,7 +125,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Merge_Fail_02" ID="{02DE2587-7082-46AA-84EC-2AC6647AC085}" ShortID="422716530">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="5.80221462527481E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0580221462527481"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Merge_Fail_02.wav</AudioFile>
@@ -203,7 +203,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Spawn_02" ID="{F0146025-83B3-45DD-B1AC-FBAC8359C369}" ShortID="77345040">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="7.31032666873855E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0731032666873855"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Spawn_02.wav</AudioFile>
