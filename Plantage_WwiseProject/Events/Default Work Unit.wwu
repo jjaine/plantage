@@ -41,7 +41,7 @@
 						<Action Name="Play" ID="{168EE41C-B362-449E-BF7B-CBB46935D281}" ShortID="208646702" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{BCF3FA77-9545-4AA5-8E2F-16ADBB2D2578}" Global="false">
-									<ObjectRef Name="Spawn" ID="{27FB45F0-4708-4BB5-8FAD-FFC7327EBAB4}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
+									<ObjectRef Name="Spawn" ID="{F58D032C-D1CA-4F41-8589-65DED81DE4A1}" WorkUnitID="{BE3E0D94-AE03-4549-8236-7EAD983D5B18}"/>
 								</Element>
 							</ElementList>
 						</Action>
