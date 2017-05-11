@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{81B4F0A7-5FED-4A52-8C4D-7E20B73F9738}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{81B4F0A7-5FED-4A52-8C4D-7E20B73F9738}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{81B4F0A7-5FED-4A52-8C4D-7E20B73F9738}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="music &amp; SFX" ID="{15ECA910-2EE2-4C7C-8FA4-61CD5C7298BC}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{A9DA3041-9548-46A1-82FC-15A192F0AD8B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Goal" ID="{09C3C1C5-0B77-4B78-B91C-1E39AC2BFF48}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Flower_Merge" ID="{37D04437-9F1B-4990-9272-BBCEEDC250F1}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Button" ID="{64EAE385-0AB9-48D5-930A-9D9C6A398EE2}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Spinning_Wheel" ID="{A69D71E6-FFD7-4AFD-AF4C-091DA0E5BDDE}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Merge_Fail" ID="{C031764D-FB72-47D5-BBB6-E23DF064AC5B}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Flower_Die" ID="{51DF2D0D-0865-4FFB-AD72-22485AB9FF49}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Spawn" ID="{AD4935F1-3DAA-4122-AAF8-FC719A329550}" WorkUnitID="{F741692A-00CA-4353-B03F-448F5AE1EF1F}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

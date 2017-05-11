@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3868000552" DateHigh="30591144"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="3867910503" DateHigh="30591144"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="4266030252" DateHigh="30591149"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="3251782466" DateHigh="30591561"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1582635387" DateHigh="30591571"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1226240053" DateHigh="30591133"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3131397375" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3131632544" DateHigh="30591132"/>
@@ -12,20 +12,20 @@
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3131597516" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Effects\Default Work Unit.wwu" DateLow="3131367351" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Effects\Factory Convolution Reverb Effects.wwu" DateLow="2934549316" DateHigh="30573139"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Effects\Factory Effects.wwu" DateLow="2591391905" DateHigh="30573139"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Events\Default Work Unit.wwu" DateLow="4266055275" DateHigh="30591149"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Effects\Factory Effects.wwu" DateLow="1582845554" DateHigh="30591571"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Events\Default Work Unit.wwu" DateLow="1582690425" DateHigh="30591571"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3131417389" DateHigh="30591132"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3131382361" DateHigh="30591132"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3131527465" DateHigh="30591132"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3131437403" DateHigh="30591132"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1582945621" DateHigh="30591571"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1582590359" DateHigh="30591571"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1582735462" DateHigh="30591571"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3131452417" DateHigh="30591132"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Plantage_WwiseProject.Niko.wsettings" DateLow="659927174" DateHigh="30591317"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Plantage_WwiseProject.Niko.wsettings" DateLow="1933870419" DateHigh="30591572"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Plantage_WwiseProject.wproj" DateLow="2924433367" DateHigh="30591177"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3131482432" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3131497445" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Queries\Factory Queries.wwu" DateLow="2588911739" DateHigh="30573139"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="4266085294" DateHigh="30591149"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3131552483" DateHigh="30591132"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1582765580" DateHigh="30591571"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1582895571" DateHigh="30591571"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\States\Default Work Unit.wwu" DateLow="3131337332" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3131512455" DateHigh="30591132"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3131587507" DateHigh="30591132"/>

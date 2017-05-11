@@ -19,6 +19,15 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="DAAAAA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="P/tpmwR1ikmmWYaZMQ855odlOvD00uNAjaopy3sYamw="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="rqUevxOn70q9jhyPr4juIQ=="/>
+				<Property Name="Interactive Music\x64_{33F00143-E6EF-4768-B2CC-0F02E61BD4E1} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4UrgTWIMEpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{657FD434-E017-406D-8A5F-8A529E697FA9} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP3gqmXYpjklAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{9DACDEF6-F723-445A-990E-C9118C634B37} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPyryWTeYIkpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{D2F3343B-F4D8-40B6-BE2C-B9C8E4BB885B} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAOG5AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{E1F7D9B9-C49D-4EDC-993A-4CF2EDB5AA50} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP/6UDxybKUpAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Music Transition List\{4AD150F9-2208-46DF-8B84-692EC0748D7D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{6E06CAA8-19B8-4A38-9148-7450B586CDD5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{7BCF98D3-B98A-46EE-BAC5-BD1DDE33A112}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{F3CC08BD-DB65-49C9-8E89-9C010A5FAE83}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SettingsUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>

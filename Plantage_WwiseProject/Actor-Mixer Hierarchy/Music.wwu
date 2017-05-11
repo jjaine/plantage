@@ -15,6 +15,11 @@
 					<ChildrenList>
 						<Sound Name="plantage bgm v1" ID="{7FB03E88-162F-4F6C-8C1B-7382C8ACB0E6}" ShortID="796764006" Type="SoundFX">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -37,6 +42,11 @@
 						</Sound>
 						<RandomSequenceContainer Name="parts separately" ID="{056A09CB-8295-4D2F-9163-C900BEBB0344}" ShortID="749856442">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 							</PropertyList>
@@ -60,6 +70,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="plantage bgm part1_notail" ID="{FD5C0AE5-41A9-4308-A600-F5044D446353}" ShortID="760091388">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.23408758544257E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.55339413449119E-03"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>plantage bgm part1_notail.wav</AudioFile>
 										</AudioFileSource>
@@ -79,6 +93,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="plantage bgm part2_notail" ID="{BEAA890C-497F-4031-8A40-076AB1525962}" ShortID="653058830">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.54260948180321E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.11067882689859E-02"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>plantage bgm part2_notail.wav</AudioFile>
 										</AudioFileSource>
@@ -105,6 +123,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="plantage bgm part3_notail" ID="{1B92BDC3-1C68-4662-ACC9-91012D942952}" ShortID="94043669">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.4045255126554E-03"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="7.40452551265491E-03"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>plantage bgm part3_notail.wav</AudioFile>
 										</AudioFileSource>
@@ -131,6 +153,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="plantage bgm part4_notail" ID="{1921A7F0-C5D4-4E4F-9F7C-E7A0E38090FA}" ShortID="74088700">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="9.94983115763066E-03"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="9.25565689081864E-03"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>plantage bgm part4_notail.wav</AudioFile>
 										</AudioFileSource>
