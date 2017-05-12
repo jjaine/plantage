@@ -92,8 +92,8 @@ public class CollideCheck : MonoBehaviour {
 				}		
 			}
             ret = true;
-            origcolor = transform.GetChild(0).GetComponent<SpriteRenderer>().color;
-            transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+            //origcolor = transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+            //transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
 		}
 	}
 	void OnTriggerExit2D(Collider2D other){
@@ -109,7 +109,7 @@ public class CollideCheck : MonoBehaviour {
 	IEnumerator Wait(){
 		yield return new WaitForSeconds(1);
 		GetComponent<Move>().allow=true;
-		transform.GetChild(0).GetComponent<SpriteRenderer>().color = origcolor;
+		//transform.GetChild(0).GetComponent<SpriteRenderer>().color = origcolor;
 	}
 
 }
