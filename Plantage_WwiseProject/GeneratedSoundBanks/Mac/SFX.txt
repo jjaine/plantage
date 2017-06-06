@@ -10,27 +10,27 @@ Event	ID	Name			Wwise Object Path	Notes
 	4182057884	Play_Spinning_Wheel			\Default Work Unit\Play_Spinning_Wheel	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	2137890	SFX_Spinning_Wheel_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spinning_Wheel_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spinning_Wheel\SFX_Spinning_Wheel_01		151404
-	45682085	SFX_Merge_Fail_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_03_5AE1C2C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_03		5471
-	77345040	SFX_Spawn_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_02_E8FCB43A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_02		144200
-	101460649	SFX_Spawn2_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_01		144200
-	212985133	SFX_Merge_Flower_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_01_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_01		9150
-	236541733	SFX_Merge_Fail_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_01_00DBE4AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_01		6006
-	285956386	SFX_Goal_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Goal_02_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Goal\SFX_Goal_02		11948
-	330192161	SFX_Flower_Die_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_03		77064
-	392483527	SFX_Spawn2_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_02		144200
-	402495388	SFX_Spawn2_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_03		144200
-	422716530	SFX_Merge_Fail_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_02_01C5F622.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_02		5869
-	447197440	plantage bgm part4	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part4_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part4\plantage bgm part4		282642
-	473167743	plantage bgm part3	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part3_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part3\plantage bgm part3		322931
-	485776491	SFX_Flower_Die_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_01		88552
-	580186404	SFX_Flower_Die_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_02		88552
-	594650026	plantage bgm part2	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part2_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part2\plantage bgm part2		276679
-	642523860	SFX_Spinning_Wheel2_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spinning_Wheel2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spinning_Wheel\SFX_Spinning_Wheel2_01		151404
-	690631715	SFX_Button2_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Button2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Button\SFX_Button2_01		39824
-	813091115	SFX_Merge_Flower_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_03_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_03		9225
-	875391029	SFX_Spawn_03	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_03_00289FB4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_03		144200
-	939507287	SFX_Merge_Flower_02	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_02_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_02		8797
-	1027639518	SFX_Spawn_01	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_01_FE9D2A38.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_01		144200
-	1064778543	plantage bgm part1	C:\Users\user\Documents\GitHub\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part1_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part1\plantage bgm part1		305476
+	2137890	SFX_Spinning_Wheel_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spinning_Wheel_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spinning_Wheel\SFX_Spinning_Wheel_01		151404
+	45682085	SFX_Merge_Fail_03	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_03_5AE1C2C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_03		5471
+	77345040	SFX_Spawn_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_02_A28D5DFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_02		144200
+	101460649	SFX_Spawn2_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_01		144200
+	212985133	SFX_Merge_Flower_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_01_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_01		9150
+	236541733	SFX_Merge_Fail_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_01_00DBE4AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_01		6006
+	285956386	SFX_Goal_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Goal_02_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Goal\SFX_Goal_02		11948
+	330192161	SFX_Flower_Die_03	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_03		77064
+	392483527	SFX_Spawn2_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_02		144200
+	402495388	SFX_Spawn2_03	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn2_03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Dark\SFX_Spawn2_03		144200
+	422716530	SFX_Merge_Fail_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Fail_02_01C5F622.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Merge_Fail\SFX_Merge_Fail_02		5869
+	447197440	plantage bgm part4	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part4_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part4\plantage bgm part4		282660
+	473167743	plantage bgm part3	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part3_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part3\plantage bgm part3		322929
+	485776491	SFX_Flower_Die_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_01		88552
+	580186404	SFX_Flower_Die_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Flower_Die_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_Die\SFX_Flower_Die_02		88552
+	594650026	plantage bgm part2	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part2_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part2\plantage bgm part2		276676
+	642523860	SFX_Spinning_Wheel2_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spinning_Wheel2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spinning_Wheel\SFX_Spinning_Wheel2_01		151404
+	690631715	SFX_Button2_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Button2_01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Button\SFX_Button2_01		39824
+	813091115	SFX_Merge_Flower_03	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_03_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_03		9225
+	875391029	SFX_Spawn_03	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_03_00289FB4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_03		144200
+	939507287	SFX_Merge_Flower_02	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Merge_Flower_02_E95633E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Flower_merge\SFX_Merge_Flower_02		8799
+	1027639518	SFX_Spawn_01	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\SFX_Spawn_01_FE9D2A38.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Spawn\Bright\SFX_Spawn_01		144200
+	1064778543	plantage bgm part1	Y:\plantage\Plantage_WwiseProject\.cache\Mac\SFX\plantage bgm part1_FF5731BF.wem		\Interactive Music Hierarchy\Default Work Unit\in-game music\plantage bgm part1\plantage bgm part1		305529
 

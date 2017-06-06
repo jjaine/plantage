@@ -33,67 +33,7 @@ public class CollideCheck : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Flower"){
 			collides=true;
-			otherFlower = other.gameObject;
-		}
-		if(other.tag == "Bar"){
-			GetComponent<Move>().allow=false;
-			if(other.transform.name == "bottombar"){
-				if(transform.position.x <= other.transform.position.x){
-	            	pos = new Vector3(transform.position.x-0.2f, transform.position.y, -1);
-	            }
-	            else{
-	            	pos = new Vector3(transform.position.x+0.2f, transform.position.y, -1);
-	            }
-			}
-			if(other.transform.name == "rightbar"){
-				Debug.Log(transform.position);
-				if(transform.position.x > 4.8f){
-					if(transform.position.y <= 2.2f)
-						pos = new Vector3(transform.position.x+0.3f, transform.position.y-0.3f, -1);
-					else{
-					 	if(transform.position.y <= transform.position.x)
-							pos = new Vector3(transform.position.x-0.3f, transform.position.y+0.3f, -1);
-						else
-							pos = new Vector3(transform.position.x+0.3f, transform.position.y-0.3f, -1);
-					}
-				}
-				else{
-					if(transform.position.y > 2.2f)
-						pos = new Vector3(transform.position.x-0.3f, transform.position.y+0.3f, -1);
-					else{
-						if(transform.position.y <= transform.position.x)
-							pos = new Vector3(transform.position.x-0.3f, transform.position.y+0.3f, -1);
-						else
-							pos = new Vector3(transform.position.x+0.3f, transform.position.y-0.3f, -1);
-					}
-				}		
-			}
-			if(other.transform.name == "leftbar"){
-				Debug.Log(transform.position);
-				if(transform.position.x < -4.8f){
-					if(transform.position.y < 2.2f)
-						pos = new Vector3(transform.position.x-0.3f, transform.position.y-0.3f, -1);
-					else{
-					 	if(transform.position.y <= transform.position.x)
-							pos = new Vector3(transform.position.x+0.3f, transform.position.y+0.3f, -1);
-						else
-							pos = new Vector3(transform.position.x-0.3f, transform.position.y-0.3f, -1);
-					}
-				}
-				else{
-					if(transform.position.y > 2.2f)
-						pos = new Vector3(transform.position.x+0.3f, transform.position.y+0.3f, -1);
-					else{
-						if(transform.position.y <= transform.position.x)
-							pos = new Vector3(transform.position.x+0.3f, transform.position.y+0.3f, -1);
-						else
-							pos = new Vector3(transform.position.x-0.3f, transform.position.y-0.3f, -1);
-					}
-				}		
-			}
-            ret = true;
-            //origcolor = transform.GetChild(0).GetComponent<SpriteRenderer>().color;
-            //transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+			otherFlower = other.transform.parent.gameObject;
 		}
 	}
 	void OnTriggerExit2D(Collider2D other){
@@ -101,15 +41,5 @@ public class CollideCheck : MonoBehaviour {
 			collides=false;
 			otherFlower = null;
 		}
-		if(other.tag == "Bar"){
-			StartCoroutine(Wait());
-		}
 	}
-
-	IEnumerator Wait(){
-		yield return new WaitForSeconds(1);
-		GetComponent<Move>().allow=true;
-		//transform.GetChild(0).GetComponent<SpriteRenderer>().color = origcolor;
-	}
-
 }

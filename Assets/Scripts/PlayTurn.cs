@@ -41,10 +41,6 @@ public class PlayTurn : MonoBehaviour {
 	void Update () {
 		if(play){
 
-			BottomBar.GetComponent<Collider2D>().enabled=false;
-			RightBar.GetComponent<Collider2D>().enabled=false;
-			LeftBar.GetComponent<Collider2D>().enabled=false;
-
 			//check collisions
 			bool c = CheckCollisions();
 
@@ -121,20 +117,14 @@ public class PlayTurn : MonoBehaviour {
 						AddNewFlower(RightPart);
 				}				
 
-				play = false;
-				button.image.sprite = playButton;
-				mergeDone = false;
+				
+				StartCoroutine(EndPlay());
 				AkSoundEngine.PostEvent("Play_Spinning_Wheel", gameObject);
 			}
-			StartCoroutine(Wait());
-
 		}
 
 		CenterCircle.transform.rotation = Quaternion.Lerp(CenterCircle.transform.rotation, Quaternion.Euler(0,0,target),0.1f);
-		
-		//BottomBar.GetComponent<Collider2D>().enabled=true;
-		//LeftBar.GetComponent<Collider2D>().enabled=true;
-		//RightBar.GetComponent<Collider2D>().enabled=true;
+
 	}
 
 	IEnumerator Blinking(GameObject flower){
@@ -142,22 +132,30 @@ public class PlayTurn : MonoBehaviour {
 	        flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
 	        flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
 	        yield return new WaitForSeconds(0.3f);
-	        flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
-	        flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
+	        if(flower!=null){
+	        	flower.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+	        	flower.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
+	    	}
 	        yield return new WaitForSeconds(1.5f);
 	    }
-    }
-
-    IEnumerator Wait(){
-    	yield return new WaitForSeconds(5);
-    	BottomBar.GetComponent<Collider2D>().enabled=true;
-		LeftBar.GetComponent<Collider2D>().enabled=true;
-		RightBar.GetComponent<Collider2D>().enabled=true;
     }
 
     IEnumerator StartPlay(){
     	yield return new WaitForSeconds(0.5f);
     	play = true;
+    	LeftBar.GetComponent<Collider2D>().enabled = false;
+    	RightBar.GetComponent<Collider2D>().enabled = false;
+    	BottomBar.GetComponent<Collider2D>().enabled = false;
+    }
+
+    IEnumerator EndPlay(){
+    	yield return new WaitForSeconds(2f);
+    	LeftBar.GetComponent<Collider2D>().enabled = true;
+    	RightBar.GetComponent<Collider2D>().enabled = true;
+    	BottomBar.GetComponent<Collider2D>().enabled = true;
+		button.image.sprite = playButton;
+		mergeDone = false;
+		play = false;
     }
 
 	public void Play(){
@@ -190,9 +188,9 @@ public class PlayTurn : MonoBehaviour {
 						flower.transform.parent = TopPart.transform;
 					}
 
-					if(!flower.GetComponent<CollideCheck>().inMerge && flower.GetComponent<CollideCheck>().collides){
+					if(!flower.transform.GetChild(0).GetComponent<CollideCheck>().inMerge && flower.transform.GetChild(0).GetComponent<CollideCheck>().collides){
 						//merge!
-						GameObject otherFlower = flower.GetComponent<CollideCheck>().otherFlower;
+						GameObject otherFlower = flower.transform.GetChild(0).GetComponent<CollideCheck>().otherFlower;
 						if(otherFlower){
 							GameObject newFlower = Combination(flower);
 							StartCoroutine(Merge(flower, newFlower, otherFlower));
@@ -210,8 +208,8 @@ public class PlayTurn : MonoBehaviour {
 
 	IEnumerator Merge(GameObject flower, GameObject newFlower, GameObject otherFlower){
 		inMerge = true;
-		flower.GetComponent<CollideCheck>().inMerge = true;
-		otherFlower.GetComponent<CollideCheck>().inMerge = true;
+		flower.transform.GetChild(0).GetComponent<CollideCheck>().inMerge = true;
+		otherFlower.transform.GetChild(0).GetComponent<CollideCheck>().inMerge = true;
 		AkSoundEngine.PostEvent("Play_Flower_Merge", gameObject);
 
         yield return new WaitForSeconds(1);
@@ -318,7 +316,8 @@ public class PlayTurn : MonoBehaviour {
 	}
 
 	GameObject Combination(GameObject flower){
-		GameObject other = flower.GetComponent<CollideCheck>().otherFlower;
+		GameObject other = flower.transform.GetChild(0).GetComponent<CollideCheck>().otherFlower;
+		Debug.Log("MERGE " + other);
 		int lCorners = flower.GetComponent<PlantInfo>().LeafCorners + other.GetComponent<PlantInfo>().LeafCorners;
 		int fCorners = flower.GetComponent<PlantInfo>().FlowerCorners + other.GetComponent<PlantInfo>().FlowerCorners;
 		if(lCorners < 1) lCorners = -1;
