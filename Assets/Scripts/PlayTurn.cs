@@ -149,13 +149,13 @@ public class PlayTurn : MonoBehaviour {
     }
 
     IEnumerator EndPlay(){
+		mergeDone = false;
+		play = false;
     	yield return new WaitForSeconds(2f);
     	LeftBar.GetComponent<Collider2D>().enabled = true;
     	RightBar.GetComponent<Collider2D>().enabled = true;
     	BottomBar.GetComponent<Collider2D>().enabled = true;
 		button.image.sprite = playButton;
-		mergeDone = false;
-		play = false;
     }
 
 	public void Play(){
@@ -170,9 +170,12 @@ public class PlayTurn : MonoBehaviour {
 
 		foreach (GameObject flower in flowersInGame){
 			if(flower!=null){
+				Debug.Log("Flower had turns left: " + flower.GetComponent<PlantInfo>().turnsLeft);
 				if(flower.GetComponent<PlantInfo>().turnsLeft == 0){
 					AkSoundEngine.PostEvent("Play_Flower_Die", gameObject);
-
+					Debug.Log("Flower killed, flower was "+flower.GetComponent<PlantInfo>().Color + " " 
+						+ flower.GetComponent<PlantInfo>().FlowerCorners + " "
+						+ flower.GetComponent<PlantInfo>().LeafCorners + " at " + flower.transform.parent.transform.name);
 					Destroy(flower);
 				}
 				else{
