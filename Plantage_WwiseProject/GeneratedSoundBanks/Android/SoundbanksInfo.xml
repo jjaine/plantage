@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>/Users/jaine/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/plantage/Plantage_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/jaine/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/plantage/Plantage_WwiseProject/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/jaine/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/plantage/Plantage_WwiseProject/GeneratedSoundBanks/Android/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/jaine/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/plantage/Plantage_WwiseProject/GeneratedSoundBanks/Android/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2099555730" Name="Play_Button" ObjectPath="\Events\Default Work Unit\Play_Button"/>
+				<Event Id="1604378720" Name="Play_Flower_Die" ObjectPath="\Events\Default Work Unit\Play_Flower_Die"/>
+				<Event Id="869562106" Name="Play_Flower_Merge" ObjectPath="\Events\Default Work Unit\Play_Flower_Merge"/>
+				<Event Id="83993043" Name="Play_Goal" ObjectPath="\Events\Default Work Unit\Play_Goal"/>
+				<Event Id="2757013549" Name="Play_Merge_Fail" ObjectPath="\Events\Default Work Unit\Play_Merge_Fail"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="1012143543" Name="Play_Spawn" ObjectPath="\Events\Default Work Unit\Play_Spawn"/>
+				<Event Id="4182057884" Name="Play_Spinning_Wheel" ObjectPath="\Events\Default Work Unit\Play_Spinning_Wheel"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="2137890" Language="SFX">
+					<ShortName>SFX_Spinning_Wheel_01.wav</ShortName>
+					<Path>SFX/SFX_Spinning_Wheel_01_9E69E797.wem</Path>
+				</File>
+				<File Id="45682085" Language="SFX">
+					<ShortName>SFX_Merge_Fail_03.wav</ShortName>
+					<Path>SFX/SFX_Merge_Fail_03_5AE1C2C6.wem</Path>
+				</File>
+				<File Id="77345040" Language="SFX">
+					<ShortName>SFX_Spawn_02.wav</ShortName>
+					<Path>SFX/SFX_Spawn_02_A28D5DFB.wem</Path>
+				</File>
+				<File Id="101460649" Language="SFX">
+					<ShortName>SFX_Spawn2_01.wav</ShortName>
+					<Path>SFX/SFX_Spawn2_01_9E69E797.wem</Path>
+				</File>
+				<File Id="212985133" Language="SFX">
+					<ShortName>SFX_Merge_Flower_01.wav</ShortName>
+					<Path>SFX/SFX_Merge_Flower_01_E95633E1.wem</Path>
+				</File>
+				<File Id="236541733" Language="SFX">
+					<ShortName>SFX_Merge_Fail_01.wav</ShortName>
+					<Path>SFX/SFX_Merge_Fail_01_00DBE4AC.wem</Path>
+				</File>
+				<File Id="285956386" Language="SFX">
+					<ShortName>SFX_Goal_02.wav</ShortName>
+					<Path>SFX/SFX_Goal_02_E95633E1.wem</Path>
+				</File>
+				<File Id="330192161" Language="SFX">
+					<ShortName>SFX_Flower_Die_03.wav</ShortName>
+					<Path>SFX/SFX_Flower_Die_03_9E69E797.wem</Path>
+				</File>
+				<File Id="392483527" Language="SFX">
+					<ShortName>SFX_Spawn2_02.wav</ShortName>
+					<Path>SFX/SFX_Spawn2_02_9E69E797.wem</Path>
+				</File>
+				<File Id="402495388" Language="SFX">
+					<ShortName>SFX_Spawn2_03.wav</ShortName>
+					<Path>SFX/SFX_Spawn2_03_9E69E797.wem</Path>
+				</File>
+				<File Id="422716530" Language="SFX">
+					<ShortName>SFX_Merge_Fail_02.wav</ShortName>
+					<Path>SFX/SFX_Merge_Fail_02_01C5F622.wem</Path>
+				</File>
+				<File Id="447197440" Language="SFX">
+					<ShortName>plantage bgm part4.wav</ShortName>
+					<Path>SFX/plantage bgm part4_FF5731BF.wem</Path>
+				</File>
+				<File Id="473167743" Language="SFX">
+					<ShortName>plantage bgm part3.wav</ShortName>
+					<Path>SFX/plantage bgm part3_FF5731BF.wem</Path>
+				</File>
+				<File Id="485776491" Language="SFX">
+					<ShortName>SFX_Flower_Die_01.wav</ShortName>
+					<Path>SFX/SFX_Flower_Die_01_9E69E797.wem</Path>
+				</File>
+				<File Id="580186404" Language="SFX">
+					<ShortName>SFX_Flower_Die_02.wav</ShortName>
+					<Path>SFX/SFX_Flower_Die_02_9E69E797.wem</Path>
+				</File>
+				<File Id="594650026" Language="SFX">
+					<ShortName>plantage bgm part2.wav</ShortName>
+					<Path>SFX/plantage bgm part2_FF5731BF.wem</Path>
+				</File>
+				<File Id="642523860" Language="SFX">
+					<ShortName>SFX_Spinning_Wheel2_01.wav</ShortName>
+					<Path>SFX/SFX_Spinning_Wheel2_01_9E69E797.wem</Path>
+				</File>
+				<File Id="690631715" Language="SFX">
+					<ShortName>SFX_Button2_01.wav</ShortName>
+					<Path>SFX/SFX_Button2_01_9E69E797.wem</Path>
+				</File>
+				<File Id="813091115" Language="SFX">
+					<ShortName>SFX_Merge_Flower_03.wav</ShortName>
+					<Path>SFX/SFX_Merge_Flower_03_E95633E1.wem</Path>
+				</File>
+				<File Id="875391029" Language="SFX">
+					<ShortName>SFX_Spawn_03.wav</ShortName>
+					<Path>SFX/SFX_Spawn_03_00289FB4.wem</Path>
+				</File>
+				<File Id="939507287" Language="SFX">
+					<ShortName>SFX_Merge_Flower_02.wav</ShortName>
+					<Path>SFX/SFX_Merge_Flower_02_E95633E1.wem</Path>
+				</File>
+				<File Id="1027639518" Language="SFX">
+					<ShortName>SFX_Spawn_01.wav</ShortName>
+					<Path>SFX/SFX_Spawn_01_FE9D2A38.wem</Path>
+				</File>
+				<File Id="1064778543" Language="SFX">
+					<ShortName>plantage bgm part1.wav</ShortName>
+					<Path>SFX/plantage bgm part1_FF5731BF.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

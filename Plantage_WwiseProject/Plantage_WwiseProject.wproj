@@ -3,6 +3,7 @@
 	<ProjectInfo>
 		<Project Name="Plantage_WwiseProject" ID="{E07E3DEF-D37F-4C50-A776-D9F792197DA7}">
 			<Platforms>
+				<Platform Name="Android" ReferencePlatform="Android" ID="{B9FFD8F0-E5F0-45C6-8910-0480E7309347}"/>
 				<Platform Name="iOS" ReferencePlatform="iOS" ID="{B4944BAE-03AD-43A1-9AFA-1C31CAC64777}"/>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{9B69FB3F-7504-498A-A659-8699310F39E6}"/>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{F03A6587-D2F4-40E3-8DAA-29CB7B186A6C}"/>
@@ -13,6 +14,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
@@ -20,6 +22,7 @@
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
@@ -30,6 +33,7 @@
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
@@ -37,6 +41,7 @@
 					<ValueList>
 						<Value Platform="Windows">Copy Streamed Files</Value>
 						<Value Platform="iOS">Copy Streamed Files</Value>
+						<Value Platform="Android">Copy Streamed Files</Value>
 						<Value Platform="Mac">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
@@ -44,6 +49,7 @@
 					<ValueList>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="iOS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="Android">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
@@ -51,6 +57,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
@@ -58,6 +65,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>

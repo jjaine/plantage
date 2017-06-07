@@ -7,6 +7,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
@@ -14,6 +15,7 @@
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
@@ -62,6 +64,7 @@
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
@@ -69,6 +72,7 @@
 					<ValueList>
 						<Value Platform="Windows">Copy Streamed Files</Value>
 						<Value Platform="iOS">Copy Streamed Files</Value>
+						<Value Platform="Android">Copy Streamed Files</Value>
 						<Value Platform="Mac">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
@@ -76,6 +80,7 @@
 					<ValueList>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="iOS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="Android">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
@@ -83,6 +88,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
@@ -90,6 +96,7 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="iOS"></Value>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
