@@ -317,7 +317,6 @@ public class PlayTurn : MonoBehaviour {
 
 	GameObject Combination(GameObject flower){
 		GameObject other = flower.transform.GetChild(0).GetComponent<CollideCheck>().otherFlower;
-		Debug.Log("MERGE " + other);
 		int lCorners = flower.GetComponent<PlantInfo>().LeafCorners + other.GetComponent<PlantInfo>().LeafCorners;
 		int fCorners = flower.GetComponent<PlantInfo>().FlowerCorners + other.GetComponent<PlantInfo>().FlowerCorners;
 		if(lCorners < 1) lCorners = -1;
